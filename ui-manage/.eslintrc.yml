@@ -1,0 +1,18 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+extends:
+  - vue-global-api
+  - eslint:recommended
+  - plugin:vue/vue3-recommended
+  - prettier
+parserOptions:
+  ecmaVersion: 12
+  sourceType: module
+plugins:
+  - vue
+rules:
+  vue/require-default-prop: 0
+  vue/attribute-hyphenation: 0
+  vue/multi-word-component-names: 0

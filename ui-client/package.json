@@ -1,0 +1,56 @@
+{
+  "private": "true",
+  "scripts": {
+    "dev": "routify -c dev:vite",
+    "dev:vite": "vite",
+    "build": "routify -b && vite build",
+    "serve": "vite preview",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:js": "eslint --ext .js,.svelte --ignore-path .gitignore .",
+    "lint:css": "stylelint **/*.{css,svelte} --ignore-path .gitignore",
+    "fixes": "node node_modules/esbuild/install.js",
+    "update": "yarn upgrade-interactive --latest",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,svelte}": "eslint",
+    "*.{css,svelte}": "stylelint"
+  },
+  "devDependencies": {
+    "@roxi/routify": "^2.18.3",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "html-minifier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.0.3",
+    "postcss-html": "^1.2.0",
+    "rollup-plugin-visualizer": "^5.5.2",
+    "stylelint": "^14.1.0",
+    "stylelint-config-html": "^1.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "svelte": "^3.44.1",
+    "vite": "^2.6.14",
+    "vite-plugin-import": "^0.4.0",
+    "vite-plugin-windicss": "^1.5.1"
+  },
+  "dependencies": {
+    "@sveltestack/svelte-query": "^1.5.0",
+    "@zerodevx/svelte-toast": "^0.6.2",
+    "broadcast-channel": "^4.5.0",
+    "d3": "^7.1.1",
+    "dayjs": "^1.10.7",
+    "jwt-decode": "^3.1.2",
+    "nats.ws": "^1.4.1",
+    "ramda": "^0.27.1",
+    "svelte-css-vars": "^0.0.3",
+    "svelte-icons": "^2.1.0",
+    "svelte-loading-spinners": "^0.1.7",
+    "uuid": "^8.3.2",
+    "vite-plugin-qiankun": "^1.0.11"
+  }
+}

@@ -1,0 +1,5 @@
+export { default as AddIcon } from '~icons/mdi/plus'
+export { default as EditIcon } from '~icons/mdi/pencil'
+export { default as DeleteIcon } from '~icons/mdi/delete'
+export { default as RefreshIcon } from '~icons/mdi/refresh'
+export { default as PasswordResetIcon } from '~icons/mdi/lock-reset'

@@ -1,0 +1,23 @@
+{
+  "name": "vite-qiankun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Soya-xy/vite-qiankun.git",
+  "author": "SoyaXy <3100034521@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "install:vite": "cd ui-client && yarn",
+    "install:manage": "cd ui-manage && yarn",
+    "install:vms": "cd ui-manage-vms && yarn",
+    "install:main": "cd main && yarn",
+    "install-all": "npm-run-all install:*",
+    "start:vite": "cd ui-client && yarn dev",
+    "start:manage": "cd ui-manage && yarn dev",
+    "start:vms": "cd ui-manage-vms && yarn dev",
+    "start:main": "cd main && yarn dev",
+    "start-all": "npm-run-all --parallel start:*"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

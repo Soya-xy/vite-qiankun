@@ -1,0 +1,11 @@
+/node_modules/
+/dist/
+/.vscode/
+.DS_Store
+stats.html
+.routify
+.idea
+*.log
+*.zip
+.env
+tmp

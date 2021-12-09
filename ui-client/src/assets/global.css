@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px; /* roundness of the scroll thumb */
+  @apply bg-gray-300; /* color of the scroll thumb */
+}
