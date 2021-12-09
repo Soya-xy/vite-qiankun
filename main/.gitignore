@@ -1,0 +1,13 @@
+.idea
+.vscode
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+stats.html
+*.log
+*.zip
+.env
+tmp
+public/images
