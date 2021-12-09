@@ -2,7 +2,7 @@
   "private": "true",
   "scripts": {
     "dev": "routify -c dev:vite",
-    "dev:vite": "vite",
+    "dev:vite": "vite --port 3001",
     "build": "routify -b && vite build",
     "serve": "vite preview",
     "lint": "yarn lint:js && yarn lint:css",
