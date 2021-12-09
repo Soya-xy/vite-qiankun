@@ -9,8 +9,7 @@
     "lint:js": "eslint --ext .js,.svelte --ignore-path .gitignore .",
     "lint:css": "stylelint **/*.{css,svelte} --ignore-path .gitignore",
     "fixes": "node node_modules/esbuild/install.js",
-    "update": "yarn upgrade-interactive --latest",
-    "prepare": "husky install"
+    "update": "yarn upgrade-interactive --latest"
   },
   "lint-staged": {
     "*.{js,svelte}": "eslint",

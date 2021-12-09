@@ -9,8 +9,7 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:css": "stylelint **/*.{css,vue} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:css",
-    "update": "yarn upgrade-interactive --latest",
-    "prepare": "husky install"
+    "update": "yarn upgrade-interactive --latest"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",

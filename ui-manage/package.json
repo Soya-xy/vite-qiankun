@@ -11,7 +11,6 @@
     "lint:css": "stylelint **/*.{css,vue} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:css",
     "update": "yarn upgrade-interactive --latest",
-    "prepare": "husky install",
     "docker": "yarn build && docker build -t ld.io:5000/power/nginx:211130-17 . && docker push ld.io:5000/power/nginx:211130-17"
   },
   "lint-staged": {
