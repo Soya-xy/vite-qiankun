@@ -1,7 +1,7 @@
 <script>
   import { config } from '~/store/app'
   import { connect, StringCodec } from 'nats.ws'
-  const servers = { servers: 'ws://localhost:8080' }
+  const servers = { servers: dev ?'ws://localhost:8080/ws':'ws://localhost:8080' }
   const sc = StringCodec()
   let nc,
     list = []
@@ -29,7 +29,8 @@
 
 </script>
 
-<button on:click={send}>say:hello</button>
+<!-- <button on:click={send}>say:hello</button> -->
+<img src="src/assets/login.png" alt="">
 {#each list as v}
   <p>{v.subject}:{v.msg}</p>
 {/each}

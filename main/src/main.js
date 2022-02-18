@@ -1,16 +1,16 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts'
-import pages from 'virtual:generated-pages'
+import pages from '~pages'
 import App from './App.vue'
 import './assets'
 import { authDirective } from './util/directive'
 
-const app = createApp(App)
-
+export const app = createApp(App)
+console.log(pages);
 app.use(
   createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes: setupLayouts(pages),
   })
 )

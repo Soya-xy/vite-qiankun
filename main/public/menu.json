@@ -1,28 +1,26 @@
 [
-    {
-        "name": "组织机构",
-        "link": "/child/vms"
-    },
-    {
-        "name": "设备管理",
-        "link": "device",
+  {
+    "name": "组织机构",
+    "link": "/child/vms/",
+    "icon": "AddIcon"
+  },
+  {
+    "name": "地图",
+    "link": "/child/map/map",
+    "icon": "EditIcon"
+  },
+  {
+    "name": "设备管理",
+    "link": "/login",
+    "menu": [
+      {
+        "name": "a",
         "menu": [
-            {
-                "name": "a",
-                "menu": [
-                    {
-                        "name": "🐩"
-                    }
-                ]
-            },
-            {
-                "name": "b1",
-                "menu": [
-                    {
-                        "name": "🐩2"
-                    }
-                ]
-            }
+          {
+            "name": "🐩"
+          }
         ]
-    }
+      }
+    ]
+  }
 ]

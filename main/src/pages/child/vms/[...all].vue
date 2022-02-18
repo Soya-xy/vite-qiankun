@@ -4,21 +4,34 @@ import { path } from 'ramda'
 let uiManageVms, power, client
 
 onMounted(() => {
-  uiManageVms = loadMicroApp({
-    name: 'vms',
-    entry: 'http://localhost:9090/admin/vms',
-    container: '#container',
-  })
-  client = loadMicroApp({
-    name: 'client',
-    entry: 'http://localhost:3001/client/',
-    container: '#container3',
-  })
-  power = loadMicroApp({
-    name: 'power',
-    entry: 'http://localhost:9091/admin/power',
-    container: '#container2',
-  })
+  console.log(123);
+  setTimeout(() => {
+    uiManageVms = loadMicroApp({
+      name: 'vms',
+      entry: 'http://localhost:9090/admin/vms',
+      container: '#container',
+    })
+  }, 500);
+
+
+  setTimeout(() => {
+    client = loadMicroApp({
+      name: 'client',
+      entry: 'http://localhost:3004/client/',
+      container: '#container3',
+    })
+  }, 1000);
+
+
+  setTimeout(() => {
+    power = loadMicroApp({
+      name: 'power',
+      entry: 'http://localhost:9091/admin/power',
+      container: '#container2',
+    })
+  }, 2000);
+
+
 
   const actions = initGlobalState({
     key: '',
@@ -54,7 +67,7 @@ meta:
 #container,
 #container2,
 #container3,
-div[id^='__qiankun_microapp_wrapper_'] {
+div[id^="__qiankun_microapp_wrapper_"] {
   height: 100%;
   flex: 1;
 }

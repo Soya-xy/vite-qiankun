@@ -21,6 +21,7 @@
       apply: url => `/client${url}`, //external URL
       remove: url => url.replace('/client', ''), //internal URL
     },
+    useHash:true
   }
 </script>
 

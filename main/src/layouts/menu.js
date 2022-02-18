@@ -1,6 +1,7 @@
 import { NIcon } from 'naive-ui'
 import { RouterLink } from 'vue-router'
 import menus from '../../public/menu.json'
+import Icons from './menu-icons'
 export function renderIcon(icon) {
   return () => h(NIcon, null, { default: () => h(icon) })
 }
@@ -15,6 +16,7 @@ function buildMenu(menu) {
         {
           to: link,
           class: 'text-base',
+          replace: true, // push 会导致相同级不展示
         },
         { default: () => name }
       )
@@ -22,7 +24,7 @@ function buildMenu(menu) {
   const item = {
     key: name || link,
     label,
-    icon: icon ? renderIcon(icon) : undefined,
+    icon: icon ? renderIcon(Icons[icon]) : undefined,
   }
   if (menu.menu) {
     item.children = menu.menu.map(buildMenu)

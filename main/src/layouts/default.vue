@@ -16,8 +16,9 @@
                 <template #icon>
                   <i-mdi-logout />
                 </template>
-              </n-button> </template
-          ></n-tooltip>
+              </n-button>
+            </template>
+          </n-tooltip>
         </div>
       </div>
     </n-layout-header>
@@ -37,6 +38,7 @@ import { useRoute } from 'vue-router'
 import { useDialog, useMessage, useNotification } from 'naive-ui'
 import { menu } from './menu'
 const route = useRoute()
+
 window.$dialog = useDialog()
 window.$message = useMessage()
 window.$notify = useNotification()

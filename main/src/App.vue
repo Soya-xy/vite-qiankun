@@ -1,10 +1,5 @@
 <template>
-  <n-config-provider
-    :locale="zhCN"
-    :date-locale="dateZhCN"
-    :theme="theme"
-    class="h-full"
-  >
+  <n-config-provider :locale="zhCN" :date-locale="dateZhCN" :theme="theme" class="h-full">
     <n-global-style />
     <n-message-provider>
       <n-dialog-provider>
@@ -18,10 +13,7 @@
 
 <script setup>
 import { zhCN, dateZhCN, darkTheme, useOsTheme } from 'naive-ui'
-
 const osThemeRef = useOsTheme()
-
-
-
 const theme = computed(() => (osThemeRef.value === 'dark' ? darkTheme : null))
+
 </script>

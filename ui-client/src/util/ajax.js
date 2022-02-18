@@ -1,6 +1,7 @@
 import { curry, __ } from 'ramda'
 import { getItem } from './cache'
 
+
 const apiPrefix = import.meta.env.VITE_API_PREFIX || '/api'
 
 export const api = createApi()

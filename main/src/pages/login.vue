@@ -38,7 +38,7 @@
           <div class="px-4 pb-2 pt-4">
             <button
               class="uppercase block w-full p-4 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none"
-              @click="$router.push('/child')"
+              @click="$router.push('/')"
             >
               登录
             </button>

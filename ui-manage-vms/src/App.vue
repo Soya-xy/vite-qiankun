@@ -5,7 +5,6 @@
     :theme="theme"
     class="h-full"
   >
-    <n-global-style />
     <n-message-provider>
       <n-dialog-provider>
         <n-notification-provider>

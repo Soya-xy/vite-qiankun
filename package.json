@@ -15,7 +15,12 @@
     "start:manage": "cd ui-manage && yarn dev",
     "start:vms": "cd ui-manage-vms && yarn dev",
     "start:main": "cd main && yarn dev",
-    "start-all": "npm-run-all --parallel start:*"
+    "start-all": "npm-run-all --parallel start:*",
+    "cace:vite": "cd ui-client && yarn cache clean",
+    "cace:manage": "cd ui-manage && yarn cache clean",
+    "cace:vms": "cd ui-manage-vms && yarn cache clean",
+    "cace:main": "cd main && yarn cache clean",
+    "cace-all": "npm-run-all --parallel cace:*"
   },
   "dependencies": {
     "npm-run-all": "^4.1.5"
