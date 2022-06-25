@@ -1,7 +1,4 @@
 import App from './App.svelte'
-import './cefsharp'
-import './assets'
-import './dayjs'
 import {
   renderWithQiankun,
   qiankunWindow,

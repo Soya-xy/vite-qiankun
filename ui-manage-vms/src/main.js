@@ -3,8 +3,6 @@ import { createRouter, createMemoryHistory } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts'
 import pages from 'virtual:generated-pages'
 import App from './App.vue'
-import './assets'
-import { authDirective } from './util/directive'
 
 import {
   renderWithQiankun,
@@ -30,8 +28,7 @@ function render(props = {}) {
   instance = createApp(App)
   instance.use(router)
   instance.mount(container ? container.querySelector('#app') : '#app')
-  // 添加自定义指令
-  authDirective(instance)
+
 }
 function storeTest(props) {
   props.onGlobalStateChange &&
@@ -42,7 +39,7 @@ function storeTest(props) {
     )
   props.setGlobalState &&
     props.setGlobalState({
-      name:props.name,
+      name: props.name,
       user: 321
     })
 }
